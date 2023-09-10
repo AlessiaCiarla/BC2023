@@ -1,7 +1,4 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
-
-export default class {
+class TableCsv {
   /**
    * @param {HTMLTableElement} root The table element which will display the CSV data.
    */
@@ -21,14 +18,14 @@ export default class {
   }
 
   /**
-   * Clears all contents of the table
+   * Clears all contents of the table (incl. the header).
    */
   clear() {
     this.root.innerHTML = "";
   }
 
   /**
-   * Sets the table header and body
+   * Sets the table
    *
    * @param {string[]} headerColumns List of headings to be used
    * @param {string[][]} data A 2D array of data to be used as the table body
@@ -109,3 +106,17 @@ export default class {
     this.root.appendChild(tbody);
   }
 }
+
+const tableRoot = document.querySelector("#csvRoot");
+const csvFileInput = document.querySelector("#csvFileInput");
+const tableCsv = new TableCsv(tableRoot);
+
+csvFileInput.addEventListener("change", (e) => {
+  Papa.parse(csvFileInput.files[0], {
+    delimiter: ",",
+    skipEmptyLines: true,
+    complete: (results) => {
+      tableCsv.update(results.data.slice(1), results.data[0]);
+    },
+  });
+});

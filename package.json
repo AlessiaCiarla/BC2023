@@ -2,7 +2,7 @@
   "name": "bc2023",
   "version": "1.0.0",
   "description": "Computational biology project",
-  "main": "index.js",
+  "main": "home.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/AlessiaCiarla/BC2023#readme",
   "dependencies": {
-    "bootstrap": "^5.3.1"
+    "bootstrap": "^5.3.1",
+    "papaparse": "^5.4.1"
   }
 }
