@@ -1,0 +1,13 @@
+Run,Experiment ID,Organism,Biomaterial,Genotype,Genotype Variation,Disease,Platform,Layout
+SRR10502968,SRX7191940,Homo Sapiens,Fibroblast (Skin Biopsy),Wild,Unknown,WT,NextSeq_500,Paired
+SRR10502969,SRX7191941,Homo Sapiens,Fibroblast (Skin Biopsy),Wild,Unknown,WT,NextSeq_500,Paired
+SRR10502970,SRX7191942,Homo Sapiens,Fibroblast (Skin Biopsy),Wild,Unknown,WT,NextSeq_500,Paired
+SRR10502971,SRX7191943,Homo Sapiens,Fibroblast (Skin Biopsy),Mecp2, p.Arg294*(c.880C > T),RTT,NextSeq_500,Paired
+SRR10502972,SRX7191944,Homo Sapiens,Fibroblast (Skin Biopsy),Mecp2,p.Arg294* (c.880C > T),RTT,NextSeq_500,Paired
+SRR10502973,SRX7191945,Homo Sapiens,Fibroblast (Skin Biopsy),Mecp2,p.Arg294* (c.880C > T),RTT,NextSeq_500,Paired
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+Run,Experiment ID,Organism,Biomaterial,Genotype,Genotype Variable,Disease,Sex,Platform,Layout
+SRR1015681,SRX367093,Homo sapiens,ESC,WT,Wild type,RTT,Female,Illumina Genome Analyzer II,Single
+SRR1015682,SRX367094,Homo sapiens,ESC,WT,Wild type,RTT,Female,Illumina Genome Analyzer II,Single
+SRR1015683,SRX367095,Homo sapiens,iPSC,WT,wt_PGP1,RTT,Male,Illumina Genome Analyzer II,Single
+SRR1015684,SRX367096,Homo sapiens,iPSC,WT,wt_PGP9,RTT,Female,Illumina Genome Analyzer II,Single
+SRR1015685,SRX367097,Homo sapiens,iPSC,WT,wt_Detroit551,RTT,Female,Illumina Genome Analyzer II,Single
+SRR1015687,SRX367099,Homo sapiens,iPSC,WT,X487W_RTT5-wt,RTT,Unknown,Illumina HiSeq 2000,Single
+SRR1015688,SRX367100,Homo sapiens,iPSC,WT,R306C/RTT4-wt,RTT,Unknown,Illumina Genome Analyzer II,Single
+SRR1015690,SRX367102,Homo sapiens,iPSC,RTT,E235fs/RTT3,RTT,Unknown,Illumina HiSeq 2000,Single
+SRR1015691,SRX367103,Homo sapiens,iPSC,RTT,R306C/RTT4,RTT,Unknown,Illumina HiSeq 2000,Single
+SRR1015692,SRX367104,Homo sapiens,iPSC,RTT,X487W/RTT5,RTT,Unknown,Illumina Genome Analyzer II,Single
+SRR1015693,SRX367105,Homo sapiens,iPSC,RTT,E235fs/RTT3_biallelic,RTT,Unknown,Illumina Genome Analyzer II,Single
+SRR1015695,SRX367107,Homo sapiens,iPSC,RTT,Q244X/RTT2_biallelic,RTT,Unknown,Illumina Genome Analyzer II,Single
+SRR1015697,SRX367109,Homo sapiens,iPSC,RTT,X487W/RTT5_biallelic,RTT,Unknown,Illumina HiSeq 2000,Single
+SRR1015680,SRX367092,Homo sapiens,ESC,WT,Wild type male,RTT,Male,Illumina Genome Analyzer II,Single
+SRR1015686,SRX367098,Homo sapiens,iPSC,WT,T158M/RTT1-wt,RTT,Unknown,Illumina Genome Analyzer II,Single
+SRR1015689,SRX367101,Homo sapiens,iPSC,RTT,X487W/RTT5,RTT,Unknown,Illumina Genome Analyzer II,Single
+SRR1015694,SRX367106,Homo sapiens,iPSC,RTT,R306C/RTT4_biallelic,RTT,Unknown,Illumina Genome Analyzer II,Single
+SRR1015696,SRX367108,Homo sapiens,iPSC,RTT,T158M/RTT1_biallelic,RTT,Unknown,Illumina HiSeq 2000,Single
+SRR1015698,SRX367110,Homo sapiens,iPSC,RTT,X487W/RTT5,RTT,Unknown,Illumina HiSeq 2000,Single

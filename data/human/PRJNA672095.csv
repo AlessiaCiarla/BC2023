@@ -1,0 +1,5 @@
+Run,Experiment ID,Organism,Biomaterial,Genotype,Genotype Variation,Disease,Platform,Layout
+SRR12900412,SRX9365449,Homo sapiens,stem cell-derived cortical organoids,MECP2 mutant 1,RTT1,RTT,Illumina HiSeq 2000,Paired
+SRR12900413,SRX9365450,Homo sapiens,stem cell-derived cortical organoids,MECP2 mutant 1,RTT1,RTT,Illumina HiSeq 2000,Paired
+SRR12900418,SRX9365455,Homo sapiens,stem cell-derived cortical organoids,MECP2 mutant 2,RTT2,RTT,Illumina HiSeq 2000,Paired
+SRR12900419,SRX9365456,Homo sapiens,stem cell-derived cortical organoids,MECP2 mutant 2,RTT2,RTT,Illumina HiSeq 2000,Paired

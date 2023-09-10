@@ -1,0 +1,6 @@
+Run,Experiment ID,Organism,Biomaterial,Disease,Platform,Layout
+SRR7551743,SRX4417662,GSM3302131,Medial ganglionic eminence (MGE) organoids,RTT,Illumina HiSeq 4000,Paired
+SRR7551746,SRX4417665,GSM3302134,Cortex organoids,RTT,Illumina HiSeq 4001,Paired
+SRR7551747,SRX4417666,GSM3302135,Cortex organoids,RTT,Illumina HiSeq 4002,Paired
+SRR7551742,SRX4417661,GSM3302130,Medial ganglionic eminence (MGE) organoids,RTT,Illumina HiSeq 4003,Paired
+

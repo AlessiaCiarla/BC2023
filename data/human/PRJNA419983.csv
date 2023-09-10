@@ -1,0 +1,27 @@
+Run,Experiment ID,Organism,Biomaterial,Genotype,Genotype Variation,platform,Layout
+SRR6325533,SRX3425274,Homo Sapiens,iPSC,WT,Unknown,Illumina_Hiseq2000,Paired
+SRR6325534,SRX3425275,Homo Sapiens,iPSC,WT,Unknown,Illumina_Hiseq2000,Paired
+SRR6325535,SRX3425276,Homo Sapiens,iPSC,WT,Unknown,Not Available,Paired
+SRR6325536,SRX3425277,Homo Sapiens,iPSC,WT,Unknown,Not Available,Paired
+SRR6325537,SRX3425278,Homo Sapiens,iPSC,WT,Unknown,Not Available,Paired
+SRR6325538,SRX3425279,Homo Sapiens,iPSC,RTT,Mecp2 R982 mutation,Not Available,Paired
+SRR6325539,SRX3425280,Homo Sapiens,iPSC,RTT,Mecp2 R982 mutation,Not Available,Paired
+SRR6325540,SRX3425281,Homo Sapiens,iPSC,RTT,Mecp2 R982 mutation,Not Available,Paired
+SRR6325541,SRX3425282,Homo Sapiens,iPSC,RTT,Mecp2 R982 mutation,Not Available,Paired
+SRR6325542,SRX3425283,Homo Sapiens,NPC,WT,Unknown,Not Available,Paired
+SRR6325543,SRX3425284,Homo Sapiens,NPC,WT,Unknown,Not Available,Paired
+SRR6325544,SRX3425285,Homo Sapiens,NPC,WT,Unknown,Not Available,Paired
+SRR6325545,SRX3425286,Homo Sapiens,NPC,WT,Unknown,Not Available,Paired
+SRR6325546,SRX3425287,Homo Sapiens,NPC,WT,Unknown,Not Available,Paired
+SRR6325547,SRX3425288,Homo Sapiens,NPC,RTT,Mecp2 R982 mutation,Not Available,Paired
+SRR6325548,SRX3425289,Homo Sapiens,NPC,RTT,Mecp2 R982 mutation,Not Available,Paired
+SRR6325549,SRX3425290,Homo Sapiens,NPC,RTT,Mecp2 R982 mutation,Not Available,Paired
+SRR6325550,SRX3425291,Homo Sapiens,NPC,RTT,Mecp2 R982 mutation,Not Available,Paired
+SRR6325551,SRX3425292,Homo Sapiens,Neuron,WT,Unknown,Not Available,Paired
+SRR6325552,SRX3425293,Homo Sapiens,Neuron,WT,Unknown,Not Available,Paired
+SRR6325553,SRX3425294,Homo Sapiens,Neuron,WT,Unknown,Not Available,Paired
+SRR6325554,SRX3425295,Homo Sapiens,Neuron,WT,Unknown,Not Available,Paired
+SRR6325555,SRX3425296,Homo Sapiens,Neuron,RTT,Mecp2 R982 mutation,Not Available,Paired
+SRR6325556,SRX3425297,Homo Sapiens,Neuron,RTT,Mecp2 R982 mutation,Not Available,Paired
+SRR6325557,SRX3425298,Homo Sapiens,Neuron,RTT,Mecp2 R982 mutation,Not Available,Paired
+SRR6325558,SRX3425299,Homo Sapiens,Neuron,RTT,Mecp2 R982 mutation,Not Available,Paired

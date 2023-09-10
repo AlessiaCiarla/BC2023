@@ -1,0 +1,12 @@
+Run,Experiment ID,Organism,Biomaterial,Genotype,Genotype Variation,Disease,Age,Sex,Platform,Layout
+SRR5483038,SRX2766399,Homo sapiens,blood,WT,WT2,RTT,5.3,Female,Illumina HiSeq 2500,Single
+SRR5483039,SRX2766400,Homo sapiens,blood,WT,WT1,RTT,9.1,Female,Illumina HiSeq 2501,Single
+SRR5483040,SRX2766401,Homo sapiens,blood,RTT,RETT6,RTT,1.8,Female,Illumina HiSeq 2502,Single
+SRR5483041,SRX2766402,Homo sapiens,blood,RTT,RETT5,RTT,3.3,Female,Illumina HiSeq 2503,Single
+SRR5483043,SRX2766404,Homo sapiens,blood,RTT,RETT3,RTT,5.1,Female,Illumina HiSeq 2504,Single
+SRR5483044,SRX2766405,Homo sapiens,blood,RTT,RETT2,RTT,2.5,Female,Illumina HiSeq 2505,Single
+SRR5483045,SRX2766406,Homo sapiens,blood,RTT,RETT1,RTT,9.5,Female,Illumina HiSeq 2506,Single
+SRR5483035,SRX2766396,Homo sapiens,blood,WT,WT5,RTT,3.3,Female,Illumina HiSeq 2507,Single
+SRR5483036,SRX2766397,Homo sapiens,blood,WT,WT4,RTT,1.1,Female,Illumina HiSeq 2508,Single
+SRR5483037,SRX2766398,Homo sapiens,blood,WT,WT3,RTT,2.5,Female,Illumina HiSeq 2509,Single
+SRR5483042,SRX2766403,Homo sapiens,blood,RTT,RETT4,RTT,2.5,Female,Illumina HiSeq 2510,Single

@@ -1,0 +1,487 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: rgb(29, 27, 27);
+    background-color: #efefef;
+}
+
+nav {
+    background: rgb(223, 219, 219);
+    padding: 0 15px 0 0;
+}
+
+a {
+    color: rgb(29, 27, 27);
+    text-decoration: none;
+}
+
+.menu,
+.submenu {
+    list-style-type: none;
+}
+
+.logo {
+    font-size: 25px;
+    padding: 0 10px 7.5px 0;
+}
+
+.item {
+    padding: 10px;
+    font-size: 19px;
+}
+
+.item.button {
+    padding: 9px 5px;
+}
+
+.item:not(.button) a:hover,
+.item a:hover::after {
+    background-color: rgb(172, 169, 169);
+    color: white;
+    border-top-left-radius: 6px !important;
+    border-bottom-left-radius: 6px !important;
+    border-top-right-radius: 6px !important;
+    border-bottom-right-radius: 6px !important;
+}
+
+/* Mobile menu */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 5px;
+}
+
+.menu li.subitem a {
+    padding: 15px;
+}
+
+.toggle {
+    order: 1;
+    font-size: 20px;
+}
+
+.item.button {
+    order: 2;
+}
+
+.item {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.active .item {
+    display: block;
+}
+
+/* Submenu up from mobile screens */
+.submenu {
+    border-top: #08090a 1px solid;
+    display: none;
+    padding-top: 10px;
+}
+
+.submenu-active .submenu {
+    display: block;
+}
+
+.has-submenu i {
+    font-size: 10px;
+}
+
+.has-submenu>a::after {
+    font-family: "Font Awesome 5 Free";
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;
+    content: "\f078";
+    color: rgb(41, 35, 35);
+    padding-left: 5px;
+}
+
+.subitem a {
+    padding: 10px 15px;
+}
+
+.submenu-active {
+    background-color: rgb(172, 169, 169);
+    border-radius: 3px;
+}
+
+.submenu li a {
+    transition: transform 0.2s ease;
+    transform-origin: 77%;
+    font-size: 15px;
+}
+
+.submenu li a:hover {
+    color: white !important;
+    transform: scale(1.1);
+}
+
+/* Tablet menu */
+@media all and (min-width: 700px) {
+    .menu {
+        justify-content: center;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .item.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+}
+
+/* Desktop menu */
+@media all and (min-width: 960px) {
+    .menu {
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        background: none;
+    }
+
+    .logo {
+        order: 0;
+    }
+
+    .item {
+        order: 1;
+        position: relative;
+        display: block;
+        width: auto;
+    }
+
+    .button {
+        order: 2;
+    }
+
+    .submenu-active .submenu {
+        padding-top: 8px !important;
+        min-width: 100%;
+        left: 0;
+        top: 79px;
+        position: absolute;
+        z-index: 99999;
+        padding: 0;
+        display: block;
+        float: none;
+        width: auto;
+        white-space: nowrap;
+        background: rgb(223, 219, 219);
+    }
+
+    .submenu li a {
+        transform-origin: 50%;
+        transition: all 0.2s;
+        z-index: 20;
+    }
+
+    .submenu li a:hover {
+        color: white !important;
+        transform: scale(1.1);
+        z-index: 40;
+    }
+
+    .toggle {
+        display: none;
+    }
+}
+
+#sfondo {
+    padding-left: 30px !important;
+    padding-top: 30px !important;
+    padding-right: 30px !important;
+    padding-bottom: 30px !important;
+    background-color: transparent;
+    height: auto;
+    width: auto;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#riquadro1 {
+    padding-right: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 10px !important;
+    padding-top: 10px !important;
+    height: 280px;
+    width: auto;
+    border-radius: 5px;
+    background-color: white;
+    -webkit-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+}
+
+.column {
+    display: inline-block;
+    margin-right: -4px;
+    height: auto;
+}
+
+.column-a {
+    width: 30%;
+}
+
+.column-b {
+    background-color: white;
+    width: 40%;
+    text-align: center;
+}
+
+.column-c {
+    padding-top: 20px;
+    width: 30%;
+    text-align: right;
+}
+
+#logo {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    height: auto;
+    object-fit: contain;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 80px;
+}
+
+#titolo_grande {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    word-spacing: 0px;
+}
+
+#spazio_vuoto {
+    width: auto;
+    height: 50px;
+    background: transparent;
+}
+
+#barra_finale {
+    height: 90px;
+    background: rgb(160, 154, 153);
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+#txt_finale {
+    padding-top: 20px;
+    width: 200px;
+    color: rgb(29, 27, 27);
+}
+
+#icona_finale .btn {
+    width: 4rem;
+    position: relative;
+    left: 95%;
+    top: -30px;
+}
+
+/*scroll in basso*/
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#section07 {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: transparent;
+}
+
+#section08 {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background: transparent;
+    margin-bottom: 1000px !important;
+}
+
+section::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 80%;
+}
+
+section h4 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    z-index: 2;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: rgb(29, 27, 27);
+    font: normal 300 45px/1 "Roboto", sans-serif;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.demo a {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    transition: opacity 0.3s;
+}
+
+.demo a:hover {
+    opacity: 0.5;
+}
+
+#section07 a {
+    padding-top: 50px;
+}
+
+#section07 a span {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid rgb(29, 27, 27);
+    border-bottom: 1px solid rgb(29, 27, 27);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb07 2s infinite;
+    animation: sdb07 2s infinite;
+    opacity: 0;
+    box-sizing: border-box;
+}
+
+#section07 a span:nth-of-type(1) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+#section07 a span:nth-of-type(2) {
+    top: 16px;
+    -webkit-animation-delay: 0.15s;
+    animation-delay: 0.15s;
+}
+
+#section07 a span:nth-of-type(3) {
+    top: 32px;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+@-webkit-keyframes sdb07 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes sdb07 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#sfondo2 {
+    padding-left: 30px !important;
+    padding-top: 30px !important;
+    padding-right: 30px !important;
+    padding-bottom: 30px !important;
+    background-color: transparent;
+    height: auto;
+    width: auto;
+}
+
+#riquadro2 {
+    padding-right: 30px !important;
+    padding-bottom: 30px !important;
+    padding-left: 30px !important;
+    padding-top: 30px !important;
+    height: auto;
+    width: auto;
+    border-radius: 5px;
+    background-color: white;
+    -webkit-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+    display: flex;
+}
+
+#left {
+    width: 60%;
+    font-size: 18px;
+    text-align: justify;
+    background-color: #efefef;
+    letter-spacing: 0px;
+    line-height: 1.6;
+    word-spacing: 1px;
+    border-radius: 50px;
+    padding: 20px 20px 20px 20px;
+}
+
+#right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#rett_home2 {
+    border-radius: 20px;
+}
+
+#link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration-line: underline;
+}
