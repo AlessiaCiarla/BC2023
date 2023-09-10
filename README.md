@@ -1,2 +1,3 @@
-# BC2023
-This is a computational biology project, where a web platform is created that analyzes samples with Rett syndrome.
+# BC2023 (Biologia-Computazionale)
+
+Computational Biology project dedicated to the development of an interface that interrogates transcriptomic data.
