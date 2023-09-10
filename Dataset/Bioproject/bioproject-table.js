@@ -64,13 +64,10 @@ class TableCsv {
             const img = document.createElement("img");
             if (text == "Female") {
               img.src = "/img/female.png";
-              //   img.setAttribute("data-bs-toggle", "tooltip");
-              //   img.setAttribute(
-              //     "data-bs-original-title",
-              //     "Tooltip content for female image"
-              //   );
+              img.title = "Female";
             } else {
               img.src = "/img/male.png";
+              img.title = "Male";
             }
             td.appendChild(img); // Aggiungi l'immagine come contenuto della cella
             break;
