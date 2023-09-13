@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: rgb(29, 27, 27);
+    background-color: #efefef;
+}
+
+#barra_finale {
+    height: 83px;
+    background: rgb(160, 154, 153);
+    position: sticky;
+    bottom: 0;
+}
+
+#riga_finale {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+#txt_finale {
+    padding-top: 20px;
+    width: 300px;
+    color: rgb(29, 27, 27);
+}
+
+#icona_finale .btn {
+    width: 4rem;
+    position: relative;
+    left: 95%;
+    top: -30px;
+}
