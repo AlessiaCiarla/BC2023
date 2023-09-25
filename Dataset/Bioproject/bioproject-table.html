@@ -2,48 +2,18 @@
 <html lang="it">
 
 <head>
-    <div id="headContainer"></div>
 
+    <div id="headContainer"></div>
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.2.0/papaparse.min.js"></script>
     <link rel="stylesheet" href="/Dataset/Bioproject/bioproject-table.css" />
     <script type="module" src="./bioproject-table.js"></script>
-
+    <script src="./../../load-insert.js" defer></script>
 
     <title>Bioproject Datail</title>
 </head>
 
 <body>
-    <nav>
-        <ul class="menu">
-            <li class="logo"><a href="./../../Home/home.html">Home</a></li>
-            <li class="item has-submenu">
-                <a tabindex="0">Search</a>
-                <ul class="submenu">
-                    <li class="subitem"><a href="#">Search by Bioproject</a></li>
-                    <li class="subitem"><a href="#">Search for DEGs</a></li>
-                    <li class="subitem"><a href="#">Search by gene</a></li>
-                    <li class="subitem"><a href="#">Search by brain region</a></li>
-                </ul>
-            </li>
-            <li class="item has-submenu">
-                <a tabindex="0">Dataset</a>
-                <ul class="submenu">
-                    <li class="subitem">
-                        <a href="">Dataset overview</a>
-                    </li>
-                    <li class="subitem"><a href="bioproject-table.html">Bioproject Detail</a></li>
-                    <li class="subitem"><a href="#">Dataset phenotypic data</a></li>
-                </ul>
-            </li>
-            <li class="item"><a href="./../../Statistics/statistics.html">Statistics</a></li>
-            <li class="item"><a href="#">Downloads</a></li>
-            <li class="item"><a href="./../../Contact  Us/contact-us.html">Contact Us</a></li>
-            <li class="item"><a href="./../../Help/help.html">Help</a></li>
-            <li class="toggle">
-                <a href="#"><i class="fas fa-bars"></i></a>
-            </li>
-        </ul>
-    </nav>
+    <div id="navbarContainer"></div>
 
     <div class="container-fluid" id="sfondo">
         <div class="container pb-5" id="riquadro1">
@@ -118,37 +88,6 @@
 
     <!--barra in basso conclusiva= footer-->
     <div id="footerContainer"></div>
-
-    <!-- In home.html -->
-    <div id="headerContainer"></div>
-    <div id="footerContainer"></div>
-
-    <script>
-        // Funzione per caricare e inserire il contenuto di un file
-        function loadAndInsertContent(url, containerId) {
-            return fetch(url)
-                .then(response => response.text())
-                .then(data => {
-                    // Inserisci il contenuto nel tuo elemento HTML
-                    document.getElementById(containerId).innerHTML = data;
-                })
-                .catch(error => {
-                    // Gestisci gli errori qui se necessario
-                    console.error(`Errore nel caricamento di ${url}:`, error);
-                });
-        }
-
-        // Carica e inserisci il contenuto di footer.html e head-content.html
-        Promise.all([
-            loadAndInsertContent("./../../footer.html", "footerContainer"),
-            loadAndInsertContent("./../../head-content.html", "headContainer")
-        ])
-            .catch(error => {
-                // Gestisci gli errori qui se necessario
-                console.error("Errore nel caricamento dei file:", error);
-            });
-    </script>
-
 
     <script>
         var input = document.getElementById("csvFileInput");
