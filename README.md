@@ -1,6 +1,7 @@
 # BC2023 (Biologia-Computazionale)
 
 - What is Rett Syndrome Portal:
+
   Computational Biology project dedicated to the development of an interface that interrogates transcriptomic data. The platform has several sections, namely Search, Dataset, Statistics, Downloads, Contact Us and Help, within which it is possible to view, analyze, download transcriptomic files that take into study human and mouse cases characterized by Rett syndrome.
 
 ---
