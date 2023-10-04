@@ -10,7 +10,7 @@ function loadAndInsertContent(url, containerId) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  loadAndInsertContent("./../../footer.html", "footerContainer");
-  loadAndInsertContent("./../../head-content.html", "headContainer");
-  loadAndInsertContent("./../../navbar.html", "navbarContainer");
+  loadAndInsertContent("./../../../footer.html", "footerContainer");
+  loadAndInsertContent("./../../../head-content.html", "headContainer");
+  loadAndInsertContent("./../../../navbar.html", "navbarContainer");
 });
