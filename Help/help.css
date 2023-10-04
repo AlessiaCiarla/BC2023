@@ -71,17 +71,20 @@ body {
 }
 
 .collapsible:hover {
-    background-color: #038dd7a1;
-    border-top-left-radius: 25px !important;
-    border-bottom-left-radius: 25px !important;
-    border-top-right-radius: 25px !important;
-    border-bottom-right-radius: 25px !important;
+    background-color: var(--bg-nav-color-hover);
+    border-top-left-radius: 15px !important;
+    border-bottom-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+    color: var(--text-color-hover);
 }
 
-.active {
-    background-color: #038dd7a1;
+.active,
+.collapsible:active {
+    background-color: var(--bg-section-color-pressed);
     border-top-left-radius: 25px !important;
     border-top-right-radius: 25px !important;
+    color: var(--text-color-hover);
 }
 
 .collapsible:after {
