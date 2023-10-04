@@ -81,7 +81,7 @@ class TableCsv {
 
       const tdButton = document.createElement("td");
       const button = document.createElement("button");
-      button.textContent = "See More";
+      button.textContent = "SEE MORE";
       button.id = "col_det";
 
       const img = document.createElement("img");
@@ -91,7 +91,7 @@ class TableCsv {
       button.appendChild(img);
 
       button.addEventListener("click", function () {
-        location.href = "/Dataset/Overview/Details/Details.html";
+        location.href = "./Details/bioproject-detail.html";
       });
 
       tdButton.appendChild(button);
