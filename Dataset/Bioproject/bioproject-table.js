@@ -38,7 +38,7 @@ class TableCsv {
       tableHeader += `<th>${columnHeader}</th>`;
     }
 
-    tableHeader += "<th>Details</th></tr></thead>";
+    // tableHeader += "<th>Details</th></tr></thead>";
     tableHeader = tableHeader.toUpperCase();
 
     this.root.insertAdjacentHTML("afterbegin", tableHeader);
@@ -79,23 +79,23 @@ class TableCsv {
         tr.appendChild(td);
       }
 
-      const tdButton = document.createElement("td");
-      const button = document.createElement("button");
-      button.textContent = "SEE MORE";
-      button.id = "col_det";
+      //   const tdButton = document.createElement("td");
+      //   const button = document.createElement("button");
+      //   button.textContent = "SEE MORE";
+      //   button.id = "col_det";
 
-      const img = document.createElement("img");
-      img.id = "img_detail";
-      img.src = "/img/detail_icona.png";
+      //   const img = document.createElement("img");
+      //   img.id = "img_detail";
+      //   img.src = "/img/detail_icona.png";
 
-      button.appendChild(img);
+      //   button.appendChild(img);
 
-      button.addEventListener("click", function () {
-        location.href = "./Details/bioproject-detail.html";
-      });
+      //   button.addEventListener("click", function () {
+      //     location.href = "./Details/bioproject-detail.html";
+      //   });
 
-      tdButton.appendChild(button);
-      tr.appendChild(tdButton);
+      //   tdButton.appendChild(button);
+      //   tr.appendChild(tdButton);
 
       tbody.appendChild(tr);
     }
