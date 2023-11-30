@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
         integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <link rel="stylesheet" href="./bioproject-detail.css" />
 
@@ -23,7 +24,12 @@
     <div id="spazio_vuoto"></div>
 
     <div class="container" id="sfondo3">
-        <div class="row">
+        <div style=" display: flex; align-items: center;">
+            <button title="Go back" class="back" onclick="clickButton()">
+                <i class="material-icons">arrow_back</i>
+            </button>
+        </div>
+        <div>
             <h1><strong>Details</strong></h1>
         </div>
     </div>
@@ -41,6 +47,12 @@
 
     <!--barra in basso conclusiva= footer-->
     <div id="footerContainer"></div>
+
+    <script>
+        function clickButton() {
+            window.location.href = '../bioproject-table.html';
+        }
+    </script>
 </body>
 
 </html>

@@ -164,3 +164,25 @@ label img {
     margin-left: 15px;
     width: 30px;
 }
+
+.details {
+    border-radius: 5px;
+    border: 1px solid #2b93fa;
+    background-color: #2b93fa;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+    color: white;
+    padding: 10px;
+}
+
+.details:hover {
+    background-color: rgb(4, 147, 230);
+    color: white;
+    font-weight: bold;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
