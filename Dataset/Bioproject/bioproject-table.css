@@ -25,10 +25,8 @@ body {
 #sfondo2 {
     background-color: transparent;
     height: auto;
-    width: auto;
+    width: 100%;
     padding: 0;
-    margin-left: 100px;
-    margin-right: 0;
 }
 
 #riquadro2 {
@@ -59,7 +57,7 @@ table {
 .scroll {
     overflow-x: auto;
     overflow-y: scroll;
-    height: 500px;
+    height: 450px;
     white-space: nowrap;
 }
 
@@ -185,4 +183,14 @@ label img {
     font-weight: bold;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+}
+
+.myLink {
+    color: rgb(29, 27, 27);
+    text-decoration: none;
+}
+
+.myLink:hover {
+    color: blue;
+    text-decoration: underline;
 }

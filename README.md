@@ -16,6 +16,7 @@
   - Git
   - VSCode
   - PapaParse
+  - Every icon is from FlatIcon (https://www.flaticon.com/)
 
 ---
 

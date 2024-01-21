@@ -55,11 +55,68 @@ class TableCsv {
 
         switch (headerColumns[j].toUpperCase()) {
           case "ORGANISM":
-            td.textContent = "hello " + text;
+            let organismDiv = document.createElement("div");
+            let organismImg = document.createElement("img");
+            organismDiv.style.backgroundColor = "#FFBF00";
+            organismDiv.style.padding = "5px";
+            organismDiv.style.borderRadius = "10px";
+            if (
+              text == "Homo sapiens" ||
+              text == "Homo_sapiens" ||
+              text == "Homo Sapiens"
+            ) {
+              organismImg.src = "/img/homo.png";
+              organismDiv.title = "Homo sapiens";
+            } else if (text == "Mus Musculus" || text == "Mus musculus") {
+              organismImg.src = "/img/mouse.png";
+              organismDiv.title = "Mus Musculus";
+            } else {
+              organismDiv.textContent = text;
+            }
+            organismDiv.appendChild(organismImg);
+            td.appendChild(organismDiv);
             break;
+
           case "RUN":
-            td.textContent = "PROVA " + text;
+            td.textContent = text;
             break;
+
+          case "EXPERIMENT ID":
+            let imgId = document.createElement("img");
+            imgId.src = "/img/id.png";
+            let div = document.createElement("div");
+            let a = document.createElement("a");
+            a.href = "https://www.ncbi.nlm.nih.gov/sra/?term=" + text;
+            a.target = "_blank";
+            a.title = "Go to SRA";
+            a.className = "myLink";
+            a.textContent = text;
+            div.style.backgroundColor = "#9DB4C0";
+            div.style.color = "white";
+            div.style.padding = "5px";
+            div.style.borderRadius = "10px";
+            div.style.display = "flex";
+            div.style.gap = "10px";
+            div.appendChild(a);
+            div.appendChild(imgId);
+            td.appendChild(div);
+            break;
+
+          case "CELLULAR FRACTION":
+            const cellularImg = document.createElement("img");
+            if (text == "Cerebellum" || text == "Brain - Cerebellum (CB)") {
+              cellularImg.src = "/img/cerebellum.png";
+              cellularImg.title = "Cerebellum";
+            } else if (text == "Brain - Cerebral cortex (CTX)") {
+              cellularImg.src = "/img/brain_cortex.png";
+              cellularImg.title = "Brain - Cerebral cortex (CTX)";
+            } else {
+              cellularImg.src = "/img/cell.png";
+              cellularImg.title = "Whole Cell";
+            }
+            td.appendChild(cellularImg);
+            break;
+
           case "SEX":
             const img = document.createElement("img");
             if (text == "Female") {
@@ -69,7 +126,7 @@ class TableCsv {
               img.src = "/img/male.png";
               img.title = "Male";
             }
-            td.appendChild(img); // Aggiungi l'immagine come contenuto della cella
+            td.appendChild(img);
             break;
           default:
             td.textContent = text;
