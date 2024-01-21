@@ -46,7 +46,7 @@
 
     <!--spazio vuoto-->
     <div id="spazio_vuoto"></div>
-    <div id="see-more" style="display: none; margin-left: 40%;">
+    <div id="see-more">
         <button class="details" onclick="clickButton()">SEE&nbsp;&nbsp;BIOPROJECT&nbsp;&nbsp;DETAILS
         </button>
     </div>
@@ -98,7 +98,9 @@
 
         function showDiv() {
             document.getElementById("scroll_div").style.display = "block";
-            document.getElementById('see-more').style.display = 'block';
+            let seeMoreDiv = document.getElementById('see-more');
+            seeMoreDiv.style.display = 'flex';
+            seeMoreDiv.style.justifyContent = 'center';
         }
 
         function clickButton() {

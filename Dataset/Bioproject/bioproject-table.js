@@ -102,6 +102,86 @@ class TableCsv {
             td.appendChild(div);
             break;
 
+          case "GENOTYPE VARIATION":
+            let imgVar = document.createElement("img");
+            if (text == "Unknown") {
+              imgVar.src = "/img/unknow.png";
+              imgVar.title = "Unknown";
+            } else if (text == "WT" || text == "Wild type") {
+              imgVar.src = "/img/wild_type.png";
+              imgVar.title = "WT";
+            } else if (text == "RTT1") {
+              imgVar.src = "/img/rett_bow.png";
+              imgVar.title = "RTT1";
+            } else if (text == "RTT2") {
+              imgVar.src = "/img/rett_bow.png";
+              imgVar.title = "RTT2";
+            } else {
+              td.textContent = text;
+            }
+            td.appendChild(imgVar);
+            break;
+
+          case "GENOTYPE":
+            const genotypeImg = document.createElement("img");
+            if (text == "WT" || text == "Wild") {
+              genotypeImg.src = "/img/wild_type.png";
+              genotypeImg.title = "WT";
+            } else if (text == "RTT") {
+              genotypeImg.src = "/img/rett_bow.png";
+              genotypeImg.title = "RTT";
+            } else if (text == "Mecp2") {
+              genotypeImg.src = "/img/rett_bow.png";
+              genotypeImg.title = "Mecp2";
+            } else if (text == "MECP2 mutant 1") {
+              genotypeImg.src = "/img/rett_bow.png";
+              genotypeImg.title = "MECP2 mutant 1";
+            } else if (text == "MECP2 mutant 2") {
+              genotypeImg.src = "/img/rett_bow.png";
+              genotypeImg.title = "MECP2 mutant 2";
+            } else {
+              td.textContent = text;
+            }
+            td.appendChild(genotypeImg);
+            break;
+
+          case "LAYOUT":
+            const layoutImg = document.createElement("img");
+            if (text == "Paired") {
+              layoutImg.src = "/img/pair.png";
+              layoutImg.title = "Paired";
+            } else {
+              layoutImg.src = "/img/single.png";
+              layoutImg.title = "Single";
+            }
+            td.appendChild(layoutImg);
+            break;
+
+          case "DISEASE":
+            const diseaseImg = document.createElement("img");
+            if (text == "RTT") {
+              diseaseImg.src = "/img/rett_bow.png";
+              diseaseImg.title = "RTT";
+            } else if (text == "WT") {
+              diseaseImg.src = "/img/wild_type.png";
+              diseaseImg.title = "WT";
+            } else {
+              td.textContent = text;
+            }
+            td.appendChild(diseaseImg);
+            break;
+
+          case "PLATFORM":
+            const platformImg = document.createElement("img");
+            if (text == "Not Available") {
+              platformImg.src = "/img/denied.png";
+              platformImg.title = "Not Available";
+            } else {
+              td.textContent = text;
+            }
+            td.appendChild(platformImg);
+            break;
+
           case "CELLULAR FRACTION":
             const cellularImg = document.createElement("img");
             if (text == "Cerebellum" || text == "Brain - Cerebellum (CB)") {
@@ -115,6 +195,20 @@ class TableCsv {
               cellularImg.title = "Whole Cell";
             }
             td.appendChild(cellularImg);
+            break;
+
+          case "TREATMENT":
+            const treatmentImg = document.createElement("img");
+            if (text == "None") {
+              treatmentImg.src = "/img/denied.png";
+              treatmentImg.title = "None";
+            } else if (text == "KCl") {
+              treatmentImg.src = "/img/potassium.png";
+              treatmentImg.title = "potassium chloride (KCI)";
+            } else {
+              td.textContent = text;
+            }
+            td.appendChild(treatmentImg);
             break;
 
           case "SEX":
