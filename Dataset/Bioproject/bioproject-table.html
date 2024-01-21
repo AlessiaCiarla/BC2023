@@ -97,7 +97,9 @@
 
 
         function showDiv() {
-            document.getElementById("scroll_div").style.display = "block";
+            let scrollDiv = document.getElementById("scroll_div");
+            scrollDiv.style.display = "flex";
+            scrollDiv.style.justifyContent = "flex-start";
             let seeMoreDiv = document.getElementById('see-more');
             seeMoreDiv.style.display = 'flex';
             seeMoreDiv.style.justifyContent = 'center';

@@ -78,7 +78,22 @@ class TableCsv {
             break;
 
           case "RUN":
-            td.textContent = text;
+            let runDiv = document.createElement("div");
+            let runLink = document.createElement("a");
+            runLink.href =
+              "https://trace.ncbi.nlm.nih.gov/Traces/?view=run_browser&acc=" +
+              text +
+              "&display=metadata";
+            runLink.target = "_blank";
+            runLink.title = "Go to Metadata";
+            runLink.className = "myLink";
+            runLink.textContent = text;
+            runDiv.style.backgroundColor = "#9DB4C0";
+            runDiv.style.color = "white";
+            runDiv.style.padding = "5px";
+            runDiv.style.borderRadius = "10px";
+            runDiv.appendChild(runLink);
+            td.appendChild(runDiv);
             break;
 
           case "EXPERIMENT ID":
@@ -102,6 +117,18 @@ class TableCsv {
             td.appendChild(div);
             break;
 
+          case "EXPERIMENT TYPE":
+            let imgType = document.createElement("img");
+            if (text == "In vivo") {
+              imgType.src = "/img/in_vivo.png";
+              imgType.title = "In vivo";
+            } else {
+              imgType.src = "/img/in_vitro.png";
+              imgType.title = "In vitro";
+            }
+            td.appendChild(imgType);
+            break;
+
           case "GENOTYPE VARIATION":
             let imgVar = document.createElement("img");
             if (text == "Unknown") {
@@ -116,15 +143,34 @@ class TableCsv {
             } else if (text == "RTT2") {
               imgVar.src = "/img/rett_bow.png";
               imgVar.title = "RTT2";
+            } else if (text == "Wild type for MeCP2 knockout") {
+              imgVar.src = "/img/wild_type.png";
+              imgVar.title = "Wild type for MeCP2 knockout";
+            } else if (text == "MeCP2 knockout" || text == "Mecp2_KO") {
+              imgVar.src = "/img/rett_bow.png";
+              imgVar.title = "MeCP2 knockout";
+            } else if (text == "Mecp2-null (Mecp2Jae)") {
+              imgVar.src = "/img/rett_bow.png";
+              imgVar.title = "Mecp2-null (Mecp2Jae)";
+            } else if (text == "Not Available") {
+              imgVar.src = "/img/denied.png";
+              imgVar.title = "Not Available";
             } else {
-              td.textContent = text;
+              td.style.maxWidth = "260px";
+              let maxLength = 30;
+              if (text.length > maxLength) {
+                td.textContent = text.substring(0, maxLength) + "...";
+              } else {
+                td.textContent = text;
+              }
+              td.title = text;
             }
             td.appendChild(imgVar);
             break;
 
           case "GENOTYPE":
             const genotypeImg = document.createElement("img");
-            if (text == "WT" || text == "Wild") {
+            if (text == "WT" || text == "Wild" || text == "Wild-type") {
               genotypeImg.src = "/img/wild_type.png";
               genotypeImg.title = "WT";
             } else if (text == "RTT") {
@@ -139,6 +185,22 @@ class TableCsv {
             } else if (text == "MECP2 mutant 2") {
               genotypeImg.src = "/img/rett_bow.png";
               genotypeImg.title = "MECP2 mutant 2";
+            } else if (text == "MeCP2 knock-out") {
+              genotypeImg.src = "/img/rett_bow.png";
+              genotypeImg.title = "MeCP2 knock-out";
+            } else if (
+              text == "MeCP2_KO" ||
+              text == "MeCP2 KO" ||
+              text == "Mecp2_KO"
+            ) {
+              genotypeImg.src = "/img/rett_bow.png";
+              genotypeImg.title = "MeCP2 KO";
+            } else if (
+              text == "Mecp2-null (Mecp2Jae)" ||
+              text == "Mecp2-null"
+            ) {
+              genotypeImg.src = "/img/rett_bow.png";
+              genotypeImg.title = "Mecp2-null (Mecp2Jae)";
             } else {
               td.textContent = text;
             }
