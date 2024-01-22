@@ -17,6 +17,7 @@
   - VSCode
   - PapaParse
   - Every icon is from FlatIcon (https://www.flaticon.com/)
+  - Every graph is realized with D3.js library (https://d3js.org/)
 
 ---
 
