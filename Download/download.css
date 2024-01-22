@@ -1,0 +1,134 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: rgb(29, 27, 27);
+    background-color: #efefef;
+}
+
+#spazio_vuoto {
+    width: auto;
+    height: 50px;
+    background: transparent;
+}
+
+#sfondo3 {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    background-color: transparent;
+    height: auto;
+    width: auto;
+    padding-left: 0px;
+    max-width: 1230px;
+}
+
+#sfondo2 {
+    background-color: transparent;
+    height: auto;
+    width: auto;
+    max-width: 1230px;
+}
+
+#riquadro2 {
+    padding-right: 20px !important;
+    padding-bottom: 20px !important;
+    padding-left: 20px !important;
+    padding-top: 60px !important;
+    height: auto;
+    width: auto;
+    border-radius: 25px;
+    background-color: rgb(223, 219, 219);
+    border: 5px solid whitesmoke;
+    text-align: center;
+}
+
+/*menu a tendina*/
+nav.primary-navigation {
+    margin-top: 15px;
+    margin-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 22px;
+    background-color: rgb(122, 199, 235);
+    width: auto;
+    border-radius: 25px;
+    border: 5px solid rgb(122, 199, 235);
+}
+
+nav.primary-navigation:hover {
+    background-color: #3ca0e7;
+    border: 5px solid #3ca0e7;
+}
+
+nav.primary-navigation ul li {
+    list-style: none;
+    padding: 0 30px;
+}
+
+#primo_dropdown:hover {
+    padding-left: 10px;
+    border-left: 3px solid #033152;
+    transition: all 0.3s ease;
+}
+
+nav.primary-navigation li a {
+    color: #033152;
+}
+
+nav.primary-navigation li a:hover {
+    color: whitesmoke;
+}
+
+nav.primary-navigation li:hover {
+    cursor: pointer;
+}
+
+nav.primary-navigation ul li ul {
+    visibility: hidden;
+    position: absolute;
+    display: none;
+    background-color: #74ace4;
+    border-radius: 25px;
+    border: 5px solid #74ace4;
+}
+
+nav.primary-navigation ul li:hover>ul,
+nav.primary-navigation ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    min-width: auto;
+    padding-top: 20px;
+    box-shadow: 0px 3px 5px -1px #ccc;
+}
+
+nav.primary-navigation ul li ul li {
+    margin-bottom: 20px;
+}
+
+nav.primary-navigation ul li ul li a:hover {
+    padding-left: 10px;
+    border-left: 3px solid #033152;
+    transition: all 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li ul li a {
+    transition: all 0.3s ease;
+}
+
+#tendina_human:hover>ul {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    box-shadow: 0px 3px 5px -1px #ccc;
+    background-color: #accff1;
+    border: #accff1;
+    margin-left: 120px;
+}
+
+ul {
+    padding-left: 0;
+}
