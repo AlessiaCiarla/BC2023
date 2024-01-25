@@ -15,6 +15,8 @@ class TableCsv {
   update(data, headerColumns = []) {
     this.clear();
     this.setTable(headerColumns, data);
+    localStorage.setItem("data", JSON.stringify(data));
+    localStorage.setItem("headerColumns", JSON.stringify(headerColumns));
   }
 
   /**
@@ -278,9 +280,12 @@ class TableCsv {
             if (text == "Female") {
               img.src = "/img/female.png";
               img.title = "Female";
-            } else {
+            } else if (text == "Male") {
               img.src = "/img/male.png";
               img.title = "Male";
+            } else {
+              img.src = "/img/denied.png";
+              img.title = "Not Available";
             }
             td.appendChild(img);
             break;

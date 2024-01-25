@@ -70,6 +70,7 @@
             var fileName = input.files[0].name;
             const endIndex = fileName.length - 4;
             const noTotalFilename = fileName.substring(0, endIndex);
+            localStorage.setItem("fileName", JSON.stringify(noTotalFilename));
             const link = "https://www.ncbi.nlm.nih.gov/bioproject/" + noTotalFilename;
 
             const linkElement = document.createElement("a");

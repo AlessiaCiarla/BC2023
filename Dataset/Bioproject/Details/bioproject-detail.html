@@ -30,20 +30,112 @@
     </div>
 
     <div class="container" id="sfondo2">
-        <div class="row" id="riquadro2"></div>
-    </div>
+        <div class="row" id="riquadro2">
 
-    <!--spazio vuoto-->
-    <div id="spazio_vuoto"></div>
-    <!--spazio vuoto-->
-    <div id="spazio_vuoto"></div>
-    <!--spazio vuoto-->
-    <div id="spazio_vuoto"></div>
+            <nav class="shift">
+                <ul style="    width: 100%; display: flex; justify-content: space-evenly;">
+                    <li><a id="infoLi">Info</a></li>
+                    <li><a id="dataLi">Data</a></li>
+                    <li><a id="phenotypicLi">Phenotypic Info</a></li>
+                </ul>
+            </nav>
+
+            <div id="infoDiv">
+                <div class="title">
+                    <p>Bioproject ID</p>
+                    <p>Organism</p>
+                    <p>Platform</p>
+                </div>
+                <div class="bio-id">
+                    <p id="bioName" style="font-weight: 600;"></p>
+                    <p id="organism" style="font-weight: 600;"></p>
+                    <div id="platform"></div>
+                </div>
+            </div>
+
+            <div id="dataDiv" style="display: none; background-color: green;">
+                prova2
+            </div>
+
+            <div id="phenotypicDiv" style="display: none; background-color: yellow;">
+                prova4
+            </div>
+        </div>
+
+        <!--spazio vuoto-->
+        <div id="spazio_vuoto"></div>
+        <!--spazio vuoto-->
+        <div id="spazio_vuoto"></div>
+        <!--spazio vuoto-->
+        <div id="spazio_vuoto"></div>
+
+    </div>
 
     <!--barra in basso conclusiva= footer-->
     <div id="footerContainer"></div>
 
     <script>
+        var infoLi = document.getElementById('infoLi');
+        var infoDiv = document.getElementById('infoDiv');
+        var dataLi = document.getElementById('dataLi');
+        var dataDiv = document.getElementById('dataDiv');
+        var phenotypicLi = document.getElementById('phenotypicLi');
+        var phenotypicDiv = document.getElementById('phenotypicDiv');
+        var allDivs = [infoDiv, dataDiv, phenotypicDiv];
+        function hideAllDivs() {
+            allDivs.forEach(function (div) {
+                div.style.display = 'none';
+            });
+        }
+        infoLi.addEventListener('click', function () {
+            hideAllDivs();
+            infoDiv.style.display = 'flex';
+        });
+        dataLi.addEventListener('click', function () {
+            hideAllDivs();
+            dataDiv.style.display = 'flex';
+        });
+        phenotypicLi.addEventListener('click', function () {
+            hideAllDivs();
+            phenotypicDiv.style.display = 'flex';
+        });
+
+        var bioName = document.getElementById('bioName');
+        var fileName = JSON.parse(localStorage.getItem('fileName'));
+        bioName.textContent = fileName;
+
+        var navbarContainer = document.getElementById('navbarContainer');
+        navbarContainer.addEventListener('click', function () {
+            localStorage.removeItem('data');
+            localStorage.removeItem('headerColumns');
+        });
+
+        var organismDiv = document.getElementById('organism');
+        var headerColumns = JSON.parse(localStorage.getItem('headerColumns'));
+        var organismIndex = headerColumns.indexOf('Organism');
+        var data = JSON.parse(localStorage.getItem('data'));
+        var firstDataArray = data[0];
+        var organismText = firstDataArray[organismIndex];
+        organismDiv.textContent = organismText;
+
+        var platformDiv = document.getElementById('platform');
+        var platformIndex = headerColumns.indexOf('Platform');
+        var platforms = [];
+        if (platformIndex !== -1) {
+            for (var i = 0; i < data.length; i++) {
+                var platform = data[i][platformIndex]; if
+                    (!platforms.includes(platform)) { platforms.push(platform); }
+            }
+        }
+        for (var i = 0; i < platforms.length; i++) {
+            var p = document.createElement('p');
+            p.style.fontWeight = '600';
+            p.style.marginBottom = '0';
+            p.textContent = platforms[i];
+            platformDiv.appendChild(p);
+        }
+
+
     </script>
 </body>
 

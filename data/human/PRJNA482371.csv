@@ -1,5 +1,5 @@
 Run,Experiment ID,Organism,Biomaterial,Disease,Platform,Layout,Sex
-SRR7551743,SRX4417662,GSM3302131,Medial ganglionic eminence (MGE) organoids,RTT,Illumina HiSeq 4000,Paired,Unknown
-SRR7551746,SRX4417665,GSM3302134,Cortex organoids,RTT,Illumina HiSeq 4001,Paired,Unknown
-SRR7551747,SRX4417666,GSM3302135,Cortex organoids,RTT,Illumina HiSeq 4002,Paired,Unknown
-SRR7551742,SRX4417661,GSM3302130,Medial ganglionic eminence (MGE) organoids,RTT,Illumina HiSeq 4003,Paired,Unknown
+SRR7551743,SRX4417662,Homo sapiens,Medial ganglionic eminence (MGE) organoids,RTT,Illumina HiSeq 4000,Paired,Unknown
+SRR7551746,SRX4417665,Homo sapiens,Cortex organoids,RTT,Illumina HiSeq 4001,Paired,Unknown
+SRR7551747,SRX4417666,Homo sapiens,Cortex organoids,RTT,Illumina HiSeq 4002,Paired,Unknown
+SRR7551742,SRX4417661,Homo sapiens,Medial ganglionic eminence (MGE) organoids,RTT,Illumina HiSeq 4003,Paired,Unknown

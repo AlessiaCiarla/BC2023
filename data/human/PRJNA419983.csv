@@ -1,4 +1,4 @@
-Run,Experiment ID,Organism,Biomaterial,Genotype,Genotype Variation,platform,Layout,Sex
+Run,Experiment ID,Organism,Biomaterial,Genotype,Genotype Variation,Platform,Layout,Sex
 SRR6325533,SRX3425274,Homo Sapiens,iPSC,WT,Unknown,Illumina_Hiseq2000,Paired,Unknown
 SRR6325534,SRX3425275,Homo Sapiens,iPSC,WT,Unknown,Illumina_Hiseq2000,Paired,Unknown
 SRR6325535,SRX3425276,Homo Sapiens,iPSC,WT,Unknown,Not Available,Paired,Unknown

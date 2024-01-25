@@ -31,11 +31,124 @@ body {
     padding-right: 20px !important;
     padding-bottom: 20px !important;
     padding-left: 20px !important;
-    padding-top: 60px !important;
+    padding-top: 20px !important;
     height: auto;
     width: auto;
     border-radius: 25px;
     background-color: rgb(223, 219, 219);
     border: 5px solid whitesmoke;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+nav.shift {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 10px 0;
+    box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+    border-radius: 15px;
+    max-height: 70px;
+    align-items: center;
+}
+
+nav ul {
+    margin-bottom: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    min-width: 150px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #253237;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+
+/* SHIFT */
+nav.shift ul li a {
+    position: relative;
+    z-index: 1;
+}
+
+nav.shift ul li a:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    background: #9DB4C0;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+}
+
+nav.shift ul li a:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+
+.shift ul li a:hover,
+a:not([href]):not([class]):hover {
+    color: white;
+    cursor: pointer;
+}
+
+#infoDiv {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: whitesmoke;
+    height: auto;
+    width: auto;
+    min-width: 900px;
+    border-radius: 15px;
+    border: 1px solid #9DB4C0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bio-id {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+p {
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
