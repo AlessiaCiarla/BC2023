@@ -33,14 +33,14 @@
         <div class="row" id="riquadro2">
 
             <nav class="shift">
-                <ul style="    width: 100%; display: flex; justify-content: space-evenly;">
-                    <li><a id="infoLi">Info</a></li>
-                    <li><a id="dataLi">Data</a></li>
-                    <li><a id="phenotypicLi">Phenotypic Info</a></li>
+                <ul style="width: 100%; display: flex; justify-content: space-evenly;">
+                    <li><button id="infoLi">Info</button></li>
+                    <li><button id="dataLi">Data</button></li>
+                    <li><button id="phenotypicLi">Phenotypic Info</button></li>
                 </ul>
             </nav>
 
-            <div id="infoDiv">
+            <div id="infoDiv" style="display: none;">
                 <div class="title">
                     <p>Bioproject ID</p>
                     <p>Organism</p>
@@ -53,21 +53,31 @@
                 </div>
             </div>
 
-            <div id="dataDiv" style="display: none; background-color: green;">
-                prova2
+            <div id="dataDiv" style="display: none;">
+                <svg id="myChart"></svg>
             </div>
 
-            <div id="phenotypicDiv" style="display: none; background-color: yellow;">
-                prova4
+            <div id="phenotypicDiv" style="display: none;">
+                <div class="total">
+                    <div class="total-category">
+                        <svg id="mysecChart"></svg>
+                        <div class="category-title"></div>
+                    </div>
+                    <div class="total-category">
+                        <svg id="mybiomaterialChart"></svg>
+                        <div class="category-bio-title"></div>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
 
-        <!--spazio vuoto-->
-        <div id="spazio_vuoto"></div>
-        <!--spazio vuoto-->
-        <div id="spazio_vuoto"></div>
-        <!--spazio vuoto-->
-        <div id="spazio_vuoto"></div>
+    <!--spazio vuoto-->
+    <div id="spazio_vuoto"></div>
+    <!--spazio vuoto-->
+    <div id="spazio_vuoto"></div>
+    <!--spazio vuoto-->
+    <div id="spazio_vuoto"></div>
 
     </div>
 
@@ -81,23 +91,22 @@
         var dataDiv = document.getElementById('dataDiv');
         var phenotypicLi = document.getElementById('phenotypicLi');
         var phenotypicDiv = document.getElementById('phenotypicDiv');
-        var allDivs = [infoDiv, dataDiv, phenotypicDiv];
-        function hideAllDivs() {
-            allDivs.forEach(function (div) {
-                div.style.display = 'none';
-            });
-        }
-        infoLi.addEventListener('click', function () {
-            hideAllDivs();
-            infoDiv.style.display = 'flex';
+        document.getElementById('infoLi').addEventListener('click', function () {
+            document.getElementById('infoDiv').style.display = 'block';
+            document.getElementById('dataDiv').style.display = 'none';
+            document.getElementById('phenotypicDiv').style.display = 'none';
         });
-        dataLi.addEventListener('click', function () {
-            hideAllDivs();
-            dataDiv.style.display = 'flex';
+
+        document.getElementById('dataLi').addEventListener('click', function () {
+            document.getElementById('infoDiv').style.display = 'none';
+            document.getElementById('dataDiv').style.display = 'block';
+            document.getElementById('phenotypicDiv').style.display = 'none';
         });
-        phenotypicLi.addEventListener('click', function () {
-            hideAllDivs();
-            phenotypicDiv.style.display = 'flex';
+
+        document.getElementById('phenotypicLi').addEventListener('click', function () {
+            document.getElementById('infoDiv').style.display = 'none';
+            document.getElementById('dataDiv').style.display = 'none';
+            document.getElementById('phenotypicDiv').style.display = 'block';
         });
 
         var bioName = document.getElementById('bioName');
@@ -134,8 +143,179 @@
             p.textContent = platforms[i];
             platformDiv.appendChild(p);
         }
+    </script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script>
+        var length = data.length;
+        var yLimit = length + 3;
 
+        var dataParams = [
+            { parameter: 'Samples', value: length }
+        ];
 
+        var margin = { top: 20, right: 20, bottom: 30, left: 40 },
+            width = 500 - margin.left - margin.right,
+            height = 400 - margin.top - margin.bottom;
+
+        var x = d3.scaleBand()
+            .range([0, width])
+            .padding(0.1);
+        var y = d3.scaleLinear()
+            .range([height, 0]);
+
+        var svg = d3.select("#myChart")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform",
+                "translate(" + margin.left + "," + margin.top + ")");
+
+        x.domain(dataParams.map(function (d) { return d.parameter; }));
+        y.domain([0, yLimit]);
+
+        svg.selectAll(".bar")
+            .data(dataParams)
+            .enter().append("rect")
+            .attr("class", "bar")
+            .attr("x", function (d) { return x(d.parameter); })
+            .attr("width", x.bandwidth())
+            .attr("y", function (d) { return y(d.value); })
+            .attr("height", function (d) { return height - y(d.value); })
+            .attr("fill", "#5689C0");
+
+        svg.append("g")
+            .attr("transform", "translate(0," + height + ")")
+            .call(d3.axisBottom(x))
+            .selectAll("text")
+            .style("font-size", "20px");
+
+        svg.append("g")
+            .call(d3.axisLeft(y).ticks(Math.ceil(yLimit)));
+    </script>
+    <script>
+        var temp = [];
+        var male = 0;
+        var female = 0;
+        var unknown = 0;
+        headerColumns.forEach(function (column) {
+            temp.push(column.toUpperCase());
+        });
+
+        if (temp.includes('SEX')) {
+            var position = headerColumns.indexOf('SEX') !== -1 ? headerColumns.indexOf('SEX') : headerColumns.indexOf('Sex');
+            data.forEach(function (item) {
+                if (item[position] === 'Male') {
+                    male += 1;
+                } else if (item[position] == 'Female') {
+                    female += 1;
+                } else {
+                    unknown += 1;
+                }
+            });
+            document.querySelector('.category-title').textContent = 'Sex';
+            var params = [
+                { parameter: 'Female', value: female },
+                { parameter: 'Male', value: male },
+                { parameter: 'Unknown', value: unknown }
+            ];
+
+            var margin = { top: 20, right: 20, bottom: 30, left: 40 },
+                width = 400 - margin.left - margin.right,
+                height = 300 - margin.top - margin.bottom;
+
+            var x = d3.scaleBand()
+                .range([0, width])
+                .padding(0.1);
+            var y = d3.scaleLinear()
+                .range([height, 0]);
+
+            var svg = d3.select("#mysecChart")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform",
+                    "translate(" + margin.left + "," + margin.top + ")");
+
+            x.domain(params.map(function (d) { return d.parameter; }));
+            y.domain([0, Math.max(...params.map(function (d) { return d.value; }))]);
+
+            var color = d3.scaleOrdinal(d3.schemeCategory10);
+            svg.selectAll(".bar")
+                .data(params)
+                .enter().append("rect")
+                .attr("class", "bar")
+                .attr("x", function (d) { return x(d.parameter); })
+                .attr("width", x.bandwidth())
+                .attr("y", function (d) { return y(d.value); })
+                .attr("height", function (d) { return height - y(d.value); })
+                .attr("fill", function (d) { return color(d.parameter); });
+
+            svg.append("g")
+                .attr("transform", "translate(0," + height + ")")
+                .call(d3.axisBottom(x))
+                .selectAll("text")
+                .style("font-size", "20px");
+
+            svg.append("g")
+                .call(d3.axisLeft(y).ticks(Math.max(...params.map(function (d) { return d.value; }))));
+        }
+
+        if (temp.includes('BIOMATERIAL')) {
+            var position = headerColumns.indexOf('BIOMATERIAL') !== -1 ? headerColumns.indexOf('BIOMATERIAL') : headerColumns.indexOf('Biomaterial');
+            var counts = {};
+            data.forEach(function (item) {
+                if (!counts[item[position]]) {
+                    counts[item[position]] = 1;
+                } else {
+                    counts[item[position]]++;
+                }
+            });
+
+            var biomaterialParams = Object.keys(counts).map(function (key) {
+                return { parameter: key, value: counts[key] };
+            });
+            document.querySelector('.category-bio-title').textContent = 'Biomaterial';
+
+            var margin = { top: 20, right: 20, bottom: 30, left: 40 },
+                width = 400 - margin.left - margin.right,
+                height = 300 - margin.top - margin.bottom;
+
+            var x = d3.scaleBand()
+                .range([0, width])
+                .padding(0.1);
+            var y = d3.scaleLinear()
+                .range([height, 0]);
+
+            var svg = d3.select("#mybiomaterialChart")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform",
+                    "translate(" + margin.left + "," + margin.top + ")");
+
+            x.domain(biomaterialParams.map(function (d) { return d.parameter; }));
+            y.domain([0, Math.max(...biomaterialParams.map(function (d) { return d.value; }))]);
+
+            var color = d3.scaleOrdinal(d3.schemeSet2);
+            svg.selectAll(".bar")
+                .data(biomaterialParams)
+                .enter().append("rect")
+                .attr("class", "bar")
+                .attr("x", function (d) { return x(d.parameter); })
+                .attr("width", x.bandwidth())
+                .attr("y", function (d) { return y(d.value); })
+                .attr("height", function (d) { return height - y(d.value); })
+                .attr("fill", function (d) { return color(d.parameter); });
+
+            svg.append("g")
+                .attr("transform", "translate(0," + height + ")")
+                .call(d3.axisBottom(x))
+                .selectAll("text")
+                .style("font-size", "20px");
+
+            svg.append("g")
+                .call(d3.axisLeft(y).ticks(Math.max(...biomaterialParams.map(function (d) { return d.value; }))));
+        }
     </script>
 </body>
 
