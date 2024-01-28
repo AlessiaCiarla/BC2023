@@ -59,13 +59,17 @@
 
             <div id="phenotypicDiv" style="display: none;">
                 <div class="total">
-                    <div class="total-category">
-                        <svg id="mysecChart"></svg>
-                        <div class="category-title"></div>
+                    <div class="total-sex-category">
+                        <svg id="mysexChart"></svg>
+                        <div class="category-sex-title"></div>
                     </div>
-                    <div class="total-category">
+                    <div class="total-bio-category">
                         <svg id="mybiomaterialChart"></svg>
                         <div class="category-bio-title"></div>
+                    </div>
+                    <div class="total-gen-category">
+                        <svg id="mygenotypeChart"></svg>
+                        <div class="category-gen-title"></div>
                     </div>
                 </div>
             </div>
@@ -117,6 +121,12 @@
         navbarContainer.addEventListener('click', function () {
             localStorage.removeItem('data');
             localStorage.removeItem('headerColumns');
+            localStorage.removeItem('fileName');
+        });
+        window.addEventListener('beforeunload', function () {
+            localStorage.removeItem('data');
+            localStorage.removeItem('headerColumns');
+            localStorage.removeItem('fileName');
         });
 
         var organismDiv = document.getElementById('organism');
@@ -155,7 +165,7 @@
 
         var margin = { top: 20, right: 20, bottom: 30, left: 40 },
             width = 500 - margin.left - margin.right,
-            height = 400 - margin.top - margin.bottom;
+            height = 500 - margin.top - margin.bottom;
 
         var x = d3.scaleBand()
             .range([0, width])
@@ -212,7 +222,7 @@
                     unknown += 1;
                 }
             });
-            document.querySelector('.category-title').textContent = 'Sex';
+            document.querySelector('.category-sex-title').textContent = 'Sex';
             var params = [
                 { parameter: 'Female', value: female },
                 { parameter: 'Male', value: male },
@@ -221,7 +231,7 @@
 
             var margin = { top: 20, right: 20, bottom: 30, left: 40 },
                 width = 400 - margin.left - margin.right,
-                height = 300 - margin.top - margin.bottom;
+                height = 400 - margin.top - margin.bottom;
 
             var x = d3.scaleBand()
                 .range([0, width])
@@ -229,7 +239,7 @@
             var y = d3.scaleLinear()
                 .range([height, 0]);
 
-            var svg = d3.select("#mysecChart")
+            var svg = d3.select("#mysexChart")
                 .attr("width", width + margin.left + margin.right)
                 .attr("height", height + margin.top + margin.bottom)
                 .append("g")
@@ -258,6 +268,8 @@
 
             svg.append("g")
                 .call(d3.axisLeft(y).ticks(Math.max(...params.map(function (d) { return d.value; }))));
+        } else {
+            document.querySelector('.total-sex-category').style.display = 'none';
         }
 
         if (temp.includes('BIOMATERIAL')) {
@@ -276,9 +288,9 @@
             });
             document.querySelector('.category-bio-title').textContent = 'Biomaterial';
 
-            var margin = { top: 20, right: 20, bottom: 30, left: 40 },
-                width = 400 - margin.left - margin.right,
-                height = 300 - margin.top - margin.bottom;
+            var margin = { top: 20, right: 20, bottom: 80, left: 40 },
+                width = 600 - margin.left - margin.right,
+                height = 350 - margin.top - margin.bottom;
 
             var x = d3.scaleBand()
                 .range([0, width])
@@ -311,10 +323,72 @@
                 .attr("transform", "translate(0," + height + ")")
                 .call(d3.axisBottom(x))
                 .selectAll("text")
-                .style("font-size", "20px");
+                .style("font-size", "12px")
+                .style("text-anchor", "middle");
 
             svg.append("g")
                 .call(d3.axisLeft(y).ticks(Math.max(...biomaterialParams.map(function (d) { return d.value; }))));
+        } else {
+            document.querySelector('.total-bio-category').style.display = 'none';
+        }
+
+        if (temp.includes('GENOTYPE')) {
+            var position = headerColumns.indexOf('GENOTYPE') !== -1 ? headerColumns.indexOf('GENOTYPE') : headerColumns.indexOf('Genotype');
+            var counts = {};
+            data.forEach(function (item) {
+                if (!counts[item[position]]) {
+                    counts[item[position]] = 1;
+                } else {
+                    counts[item[position]]++;
+                }
+            });
+
+            var genotypeParams = Object.keys(counts).map(function (key) {
+                return { parameter: key, value: counts[key] };
+            });
+            document.querySelector('.category-gen-title').textContent = 'Genotype';
+
+            var margin = { top: 20, right: 20, bottom: 30, left: 40 },
+                width = 500 - margin.left - margin.right,
+                height = 400 - margin.top - margin.bottom;
+
+            var x = d3.scaleBand()
+                .range([0, width])
+                .padding(0.1);
+            var y = d3.scaleLinear()
+                .range([height, 0]);
+
+            var svg = d3.select("#mygenotypeChart")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform",
+                    "translate(" + margin.left + "," + margin.top + ")");
+
+            x.domain(genotypeParams.map(function (d) { return d.parameter; }));
+            y.domain([0, Math.max(...genotypeParams.map(function (d) { return d.value; }))]);
+
+            var color = d3.scaleOrdinal(d3.schemeTableau10);
+            svg.selectAll(".bar")
+                .data(genotypeParams)
+                .enter().append("rect")
+                .attr("class", "bar")
+                .attr("x", function (d) { return x(d.parameter); })
+                .attr("width", x.bandwidth())
+                .attr("y", function (d) { return y(d.value); })
+                .attr("height", function (d) { return height - y(d.value); })
+                .attr("fill", function (d) { return color(d.parameter); });
+
+            svg.append("g")
+                .attr("transform", "translate(0," + height + ")")
+                .call(d3.axisBottom(x))
+                .selectAll("text")
+                .style("font-size", "15px");
+
+            svg.append("g")
+                .call(d3.axisLeft(y).ticks(Math.max(...genotypeParams.map(function (d) { return d.value; }))));
+        } else {
+            document.querySelector('.total-gen-category').style.display = 'none';
         }
     </script>
 </body>

@@ -141,14 +141,18 @@ p {
     flex-wrap: wrap;
 }
 
-.total-category {
+.total-sex-category,
+.total-bio-category,
+.total-gen-category {
     display: flex;
     flex-direction: row;
     gap: 40px;
+    margin-bottom: 40px;
 }
 
-.category-title,
-.category-bio-title {
+.category-sex-title,
+.category-bio-title,
+.category-gen-title {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
