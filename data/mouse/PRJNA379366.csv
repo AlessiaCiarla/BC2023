@@ -1,17 +1,17 @@
-"Run","Experiment ID","Organism","Biomaterial","Genotype","Genotype Variation","Strain","Disease","Age","Sex","Platform","Layout"
-"SRR5349381","SRX2645825","Mus Musculus","Whole Cortex","WT","WT","C57BL/6","RTT","P60+","Male","Illumina HiSeq 2500","Paired"
-"SRR5349382","SRX2645825","Mus Musculus","Whole Cortex","WT","WT","C57BL/6","RTT","P60+","Male","Illumina HiSeq 2500","Paired"
-"SRR5349383","SRX2645826","Mus Musculus","Whole Cortex","WT","WT","C57BL/6","RTT","P60+","Male","Illumina HiSeq 2500","Paired"
-"SRR5349384","SRX2645826","Mus Musculus","Whole Cortex","WT","WT","C57BL/6","RTT","P60+","Male","Illumina HiSeq 2500","Paired"
-"SRR5349385","SRX2645827","Mus Musculus","Whole Cortex","WT","WT","C57BL/6","RTT","P60+","Male","Illumina HiSeq 2500","Paired"
-"SRR5349386","SRX2645827","Mus Musculus","Whole Cortex","WT","WT","C57BL/6","RTT","P60+","Male","Illumina HiSeq 2500","Paired"
-"SRR5349387","SRX2645828","Mus Musculus","Whole Cortex","WT","WT","C57BL/6","RTT","P60+","Male","Illumina HiSeq 2500","Paired"
-"SRR5349388","SRX2645828","Mus Musculus","Whole Cortex","WT","WT","C57BL/6","RTT","P60+","Male","Illumina HiSeq 2500","Paired"
-"SRR5349389","SRX2645829","Mus Musculus","Whole Cortex","Mecp2-null (Mecp2Jae)","Mecp2-null (Mecp2Jae)","C57BL/6","RTT","P60+","Male","Illumina HiSeq 2500","Paired"
-"SRR5349390","SRX2645829","Mus Musculus","Whole Cortex","Mecp2-null (Mecp2Jae)","Mecp2-null (Mecp2Jae)","C57BL/6","RTT","P60+","Male","Illumina HiSeq 2500","Paired"
-"SRR5349391","SRX2645830","Mus Musculus","Whole Cortex","Mecp2-null (Mecp2Jae)","Mecp2-null (Mecp2Jae)","C57BL/6","RTT","P60+","Male","Illumina HiSeq 2500","Paired"
-"SRR5349392","SRX2645830","Mus Musculus","Whole Cortex","Mecp2-null (Mecp2Jae)","Mecp2-null (Mecp2Jae)","C57BL/6","RTT","P60+","Male","Illumina HiSeq 2500","Paired"
-"SRR5349393","SRX2645831","Mus Musculus","Whole Cortex","Mecp2-null (Mecp2Jae)","Mecp2-null (Mecp2Jae)","C57BL/6","RTT","P60+","Male","Illumina HiSeq 2500","Paired"
-"SRR5349394","SRX2645831","Mus Musculus","Whole Cortex","Mecp2-null (Mecp2Jae)","Mecp2-null (Mecp2Jae)","C57BL/6","RTT","P60+","Male","Illumina HiSeq 2500","Paired"
-"SRR5349395","SRX2645832","Mus Musculus","Whole Cortex","Mecp2-null (Mecp2Jae)","Mecp2-null (Mecp2Jae)","C57BL/6","RTT","P60+","Male","Illumina HiSeq 2500","Paired"
-"SRR5349396","SRX2645832","Mus Musculus","Whole Cortex","Mecp2-null (Mecp2Jae)","Mecp2-null (Mecp2Jae)","C57BL/6","RTT","P60+","Male","Illumina HiSeq 2500","Paired"
+Run,Experiment ID,Organism,Biomaterial,Genotype,Genotype Variation,Strain,Disease,Age,Sex,Platform,Layout
+SRR5349381,SRX2645825,Mus Musculus,Whole Cortex,WT,WT,C57BL/6,RTT,P60+,Male,Illumina HiSeq 2500,Paired
+SRR5349382,SRX2645825,Mus Musculus,Whole Cortex,WT,WT,C57BL/6,RTT,P60+,Male,Illumina HiSeq 2500,Paired
+SRR5349383,SRX2645826,Mus Musculus,Whole Cortex,WT,WT,C57BL/6,RTT,P60+,Male,Illumina HiSeq 2500,Paired
+SRR5349384,SRX2645826,Mus Musculus,Whole Cortex,WT,WT,C57BL/6,RTT,P60+,Male,Illumina HiSeq 2500,Paired
+SRR5349385,SRX2645827,Mus Musculus,Whole Cortex,WT,WT,C57BL/6,RTT,P60+,Male,Illumina HiSeq 2500,Paired
+SRR5349386,SRX2645827,Mus Musculus,Whole Cortex,WT,WT,C57BL/6,RTT,P60+,Male,Illumina HiSeq 2500,Paired
+SRR5349387,SRX2645828,Mus Musculus,Whole Cortex,WT,WT,C57BL/6,RTT,P60+,Male,Illumina HiSeq 2500,Paired
+SRR5349388,SRX2645828,Mus Musculus,Whole Cortex,WT,WT,C57BL/6,RTT,P60+,Male,Illumina HiSeq 2500,Paired
+SRR5349389,SRX2645829,Mus Musculus,Whole Cortex,Mecp2-null (Mecp2Jae),Mecp2-null (Mecp2Jae),C57BL/6,RTT,P60+,Male,Illumina HiSeq 2500,Paired
+SRR5349390,SRX2645829,Mus Musculus,Whole Cortex,Mecp2-null (Mecp2Jae),Mecp2-null (Mecp2Jae),C57BL/6,RTT,P60+,Male,Illumina HiSeq 2500,Paired
+SRR5349391,SRX2645830,Mus Musculus,Whole Cortex,Mecp2-null (Mecp2Jae),Mecp2-null (Mecp2Jae),C57BL/6,RTT,P60+,Male,Illumina HiSeq 2500,Paired
+SRR5349392,SRX2645830,Mus Musculus,Whole Cortex,Mecp2-null (Mecp2Jae),Mecp2-null (Mecp2Jae),C57BL/6,RTT,P60+,Male,Illumina HiSeq 2500,Paired
+SRR5349393,SRX2645831,Mus Musculus,Whole Cortex,Mecp2-null (Mecp2Jae),Mecp2-null (Mecp2Jae),C57BL/6,RTT,P60+,Male,Illumina HiSeq 2500,Paired
+SRR5349394,SRX2645831,Mus Musculus,Whole Cortex,Mecp2-null (Mecp2Jae),Mecp2-null (Mecp2Jae),C57BL/6,RTT,P60+,Male,Illumina HiSeq 2500,Paired
+SRR5349395,SRX2645832,Mus Musculus,Whole Cortex,Mecp2-null (Mecp2Jae),Mecp2-null (Mecp2Jae),C57BL/6,RTT,P60+,Male,Illumina HiSeq 2500,Paired
+SRR5349396,SRX2645832,Mus Musculus,Whole Cortex,Mecp2-null (Mecp2Jae),Mecp2-null (Mecp2Jae),C57BL/6,RTT,P60+,Male,Illumina HiSeq 2500,Paired

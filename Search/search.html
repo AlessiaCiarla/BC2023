@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <script src="./../../load-insert.js" defer></script>
+    <div id="headContainer"></div>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/Search/search.css" />
+    <script type="module" src="./search.js"></script>
+
+    <title>Search - Rett Syndrome Portal</title>
+</head>
+
+<body>
+    <div id="navbarContainer"></div>
+
+    <!--spazio vuoto-->
+    <div id="spazio_vuoto"></div>
+
+    <div class="container" id="sfondo3">
+        <div class="row">
+            <h1><strong>Search</strong></h1>
+        </div>
+    </div>
+
+    <div class="container" id="sfondo2">
+        <div class="row" id="riquadro2">
+            <div style="display: flex;">
+                <p class="title">Choose an organism</p>
+            </div>
+            <div style="margin-bottom: 20px; width: 70%; padding-right: 0;">
+                <select id="organism" class="form-select">
+                    <option selected disabled>Choose an organism</option>
+                    <option>Mouse( Mus Musculus)</option>
+                    <option>Human (Homo Sapiens)</option>
+                </select>
+            </div>
+
+            <!--possono essere filtrati entrambi per Biomaterial, Genotype e Genotype Variation-->
+            <div id="filter-div" style="display: none;">
+                <div style="display: flex;">
+                    <p class="title">Choose a filter</p>
+                </div>
+                <div style="margin-bottom: 20px; width: 70%;">
+                    <select id="filter" class="form-select">
+                        <option selected disabled>Choose a filter</option>
+                        <option>Biomaterial</option>
+                        <option>Genotype</option>
+                        <option>Genotype Variation</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- select con tutti i valori possibili, filtrati per il valore della seconda select = valuesThirdSelect-->
+            <div id="result-div" style="display: none;">
+                <div style="display: flex;">
+                    <p class="title">Choose an option</p>
+                </div>
+                <div style="margin-bottom: 20px; width: 70%;">
+                    <select id="results" class="form-select">
+                        <option selected disabled>Choose an option</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="file-results" style="display: none;">
+            <h5>These are the bioprojects with the filters chosen:</h5>
+            <div id="filesName"></div>
+            <h6>You can also download these files <a href="../Download/download.html">here</a>.</h6>
+        </div>
+    </div>
+
+    <!--spazio vuoto-->
+    <div id="spazio_vuoto"></div>
+    <!--spazio vuoto-->
+    <div id="spazio_vuoto"></div>
+    <!--spazio vuoto-->
+    <div id="spazio_vuoto"></div>
+
+    <!--barra in basso conclusiva= footer-->
+    <div id="footerContainer"></div>
+
+</body>
+
+</html>

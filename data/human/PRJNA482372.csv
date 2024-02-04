@@ -1,4 +1,4 @@
-Run,Experiment ID,Organism,Biomaterial,Genotype,genotype Variation,Disease,Treatment,Time,Platform,Layout,Sex
+Run,Experiment ID,Organism,Biomaterial,Genotype,Genotype Variation,Disease,Treatment,Time,Platform,Layout,Sex
 SRR7551522,SRX4417565,Homo sapiens,In vitro differentiated interneurons (INs),RTT,MeCP2 R133C mutant,RTT,None,D74,Illumina HiSeq 2010,Paired,Unknown
 SRR7551523,SRX4417566,Homo sapiens,In vitro differentiated interneurons (INs),WT,WT,RTT,None,D74,Illumina HiSeq 2011,Paired,Unknown
 SRR7551524,SRX4417567,Homo sapiens,In vitro differentiated interneurons (INs),WT,WT,RTT,None,D74,Illumina HiSeq 2012,Paired,Unknown

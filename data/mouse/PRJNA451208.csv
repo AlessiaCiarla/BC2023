@@ -1,31 +1,31 @@
-"Run","Experiment ID","Organism","Biomaterial","Genotype","Strain","Disease","Sex","Treatment","Platform","Layout","experiment type"
-"SRR7050849","SRX3981916","Mus Musculus","Hippocampus","Mecp2-null","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vivo"
-"SRR7050848","SRX3981916","Mus Musculus","Hippocampus","Mecp2-null","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vivo"
-"SRR7050847","SRX3981916","Mus Musculus","Hippocampus","Mecp2-null","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vivo"
-"SRR7050846","SRX3981915","Mus Musculus","Hippocampus","WT","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vivo"
-"SRR7050845","SRX3981915","Mus Musculus","Hippocampus","WT","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vivo"
-"SRR7050844","SRX3981915","Mus Musculus","Hippocampus","WT","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vivo"
-"SRR7050843","SRX3981914","Mus Musculus","Hippocampus","Mecp2-null","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vivo"
-"SRR7050842","SRX3981914","Mus Musculus","Hippocampus","Mecp2-null","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vivo"
-"SRR7050841","SRX3981914","Mus Musculus","Hippocampus","Mecp2-null","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vivo"
-"SRR7050840","SRX3981913","Mus Musculus","Hippocampus","WT","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vivo"
-"SRR7050839","SRX3981913","Mus Musculus","Hippocampus","WT","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vivo"
-"SRR7050838","SRX3981913","Mus Musculus","Hippocampus","WT","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vivo"
-"SRR7050834","SRX3981911","Mus Musculus","Cortical culture","WT","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vitro"
-"SRR7050833","SRX3981911","Mus Musculus","Cortical culture","WT","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vitro"
-"SRR7050832","SRX3981911","Mus Musculus","Cortical culture","WT","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vitro"
-"SRR7050828","SRX3981909","Mus Musculus","Cortical culture","WT","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vitro"
-"SRR7050827","SRX3981909","Mus Musculus","Cortical culture","WT","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vitro"
-"SRR7050826","SRX3981909","Mus Musculus","Cortical culture","WT","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vitro"
-"SRR7050822","SRX3981907","Mus Musculus","Cortical culture","WT","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vitro"
-"SRR7050821","SRX3981907","Mus Musculus","Cortical culture","WT","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vitro"
-"SRR7050820","SRX3981907","Mus Musculus","Cortical culture","WT","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vitro"
-"SRR7050816","SRX3981905","Mus Musculus","Cortical culture","Mecp2-null","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vitro"
-"SRR7050815","SRX3981905","Mus Musculus","Cortical culture","Mecp2-null","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vitro"
-"SRR7050814","SRX3981905","Mus Musculus","Cortical culture","Mecp2-null","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vitro"
-"SRR7050810","SRX3981903","Mus Musculus","Cortical culture","Mecp2-null","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vitro"
-"SRR7050809","SRX3981903","Mus Musculus","Cortical culture","Mecp2-null","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vitro"
-"SRR7050808","SRX3981903","Mus Musculus","Cortical culture","Mecp2-null","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vitro"
-"SRR7050804","SRX3981901","Mus Musculus","Cortical culture","Mecp2-null","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vitro"
-"SRR7050803","SRX3981901","Mus Musculus","Cortical culture","Mecp2-null","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vitro"
-"SRR7050802","SRX3981901","Mus Musculus","Cortical culture","Mecp2-null","C57BL/6","RTT","Male","None","Illumina 2500","Paired","In vitro"
+Run,Experiment ID,Organism,Biomaterial,Genotype,Strain,Disease,Sex,Treatment,Platform,Layout,experiment type
+SRR7050849,SRX3981916,Mus Musculus,Hippocampus,Mecp2-null,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vivo
+SRR7050848,SRX3981916,Mus Musculus,Hippocampus,Mecp2-null,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vivo
+SRR7050847,SRX3981916,Mus Musculus,Hippocampus,Mecp2-null,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vivo
+SRR7050846,SRX3981915,Mus Musculus,Hippocampus,WT,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vivo
+SRR7050845,SRX3981915,Mus Musculus,Hippocampus,WT,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vivo
+SRR7050844,SRX3981915,Mus Musculus,Hippocampus,WT,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vivo
+SRR7050843,SRX3981914,Mus Musculus,Hippocampus,Mecp2-null,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vivo
+SRR7050842,SRX3981914,Mus Musculus,Hippocampus,Mecp2-null,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vivo
+SRR7050841,SRX3981914,Mus Musculus,Hippocampus,Mecp2-null,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vivo
+SRR7050840,SRX3981913,Mus Musculus,Hippocampus,WT,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vivo
+SRR7050839,SRX3981913,Mus Musculus,Hippocampus,WT,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vivo
+SRR7050838,SRX3981913,Mus Musculus,Hippocampus,WT,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vivo
+SRR7050834,SRX3981911,Mus Musculus,Cortical culture,WT,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vitro
+SRR7050833,SRX3981911,Mus Musculus,Cortical culture,WT,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vitro
+SRR7050832,SRX3981911,Mus Musculus,Cortical culture,WT,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vitro
+SRR7050828,SRX3981909,Mus Musculus,Cortical culture,WT,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vitro
+SRR7050827,SRX3981909,Mus Musculus,Cortical culture,WT,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vitro
+SRR7050826,SRX3981909,Mus Musculus,Cortical culture,WT,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vitro
+SRR7050822,SRX3981907,Mus Musculus,Cortical culture,WT,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vitro
+SRR7050821,SRX3981907,Mus Musculus,Cortical culture,WT,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vitro
+SRR7050820,SRX3981907,Mus Musculus,Cortical culture,WT,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vitro
+SRR7050816,SRX3981905,Mus Musculus,Cortical culture,Mecp2-null,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vitro
+SRR7050815,SRX3981905,Mus Musculus,Cortical culture,Mecp2-null,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vitro
+SRR7050814,SRX3981905,Mus Musculus,Cortical culture,Mecp2-null,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vitro
+SRR7050810,SRX3981903,Mus Musculus,Cortical culture,Mecp2-null,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vitro
+SRR7050809,SRX3981903,Mus Musculus,Cortical culture,Mecp2-null,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vitro
+SRR7050808,SRX3981903,Mus Musculus,Cortical culture,Mecp2-null,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vitro
+SRR7050804,SRX3981901,Mus Musculus,Cortical culture,Mecp2-null,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vitro
+SRR7050803,SRX3981901,Mus Musculus,Cortical culture,Mecp2-null,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vitro
+SRR7050802,SRX3981901,Mus Musculus,Cortical culture,Mecp2-null,C57BL/6,RTT,Male,None,Illumina 2500,Paired,In vitro

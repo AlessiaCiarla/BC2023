@@ -1,4 +1,4 @@
-Run,Experiment ID,Organism,Biomaterial,Genotype,Genotype Variable,Disease,Sex,Platform,Layout
+Run,Experiment ID,Organism,Biomaterial,Genotype,Genotype Variation,Disease,Sex,Platform,Layout
 SRR1015681,SRX367093,Homo sapiens,ESC,WT,Wild type,RTT,Female,Illumina Genome Analyzer II,Single
 SRR1015682,SRX367094,Homo sapiens,ESC,WT,Wild type,RTT,Female,Illumina Genome Analyzer II,Single
 SRR1015683,SRX367095,Homo sapiens,iPSC,WT,wt_PGP1,RTT,Male,Illumina Genome Analyzer II,Single

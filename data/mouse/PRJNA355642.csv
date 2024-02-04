@@ -1,13 +1,13 @@
-"Run","Experiment ID","Organism","Biomaterial","Genotype","Genotype Variation","Age","Sex","Platform","Layout"
-"SRR5068328","SRX2388247","Mus Musculus","Microglia dissected from mouse brain tissues","Mecp2_KO","Mecp2_KO","5 week","Female","Illumina HiSeq 2500","Paired"
-"SRR5068330","SRX2388249","Mus Musculus","Microglia dissected from mouse brain tissues","Mecp2_KO","Mecp2_KO","5 week","Female","Illumina HiSeq 2500","Paired"
-"SRR5068331","SRX2388250","Mus Musculus","Microglia dissected from mouse brain tissues","WT","WT","5 week","Female","Illumina HiSeq 2500","Paired"
-"SRR5068332","SRX2388251","Mus Musculus","Microglia dissected from mouse brain tissues","WT","WT","5 week","Female","Illumina HiSeq 2500","Paired"
-"SRR5068333","SRX2388252","Mus Musculus","Microglia dissected from mouse brain tissues","WT","WT","5 week","Female","Illumina HiSeq 2500","Paired"
-"SRR5068335","SRX2388254","Mus Musculus","Microglia dissected from mouse brain tissues","Mecp2_KO","Mecp2_KO","24 week","Female","Illumina HiSeq 2500","Paired"
-"SRR5068338","SRX2388257","Mus Musculus","Microglia dissected from mouse brain tissues","WT","WT","24 week","Female","Illumina HiSeq 2500","Paired"
-"SRR5068329","SRX2388248","Mus Musculus","Microglia dissected from mouse brain tissues","Mecp2_KO","Mecp2_KO","5 week","Female","Illumina HiSeq 2500","Paired"
-"SRR5068334","SRX2388253","Mus Musculus","Microglia dissected from mouse brain tissues","Mecp2_KO","Mecp2_KO","24 week","Female","Illumina HiSeq 2500","Paired"
-"SRR5068336","SRX2388255","Mus Musculus","Microglia dissected from mouse brain tissues","Mecp2_KO","Mecp2_KO","24 week","Female","Illumina HiSeq 2500","Paired"
-"SRR5068337","SRX2388256","Mus Musculus","Microglia dissected from mouse brain tissues","WT","WT","24 week","Female","Illumina HiSeq 2500","Paired"
-"SRR5068339","SRX2388258","Mus Musculus","Microglia dissected from mouse brain tissues","WT","WT","24 week","Female","Illumina HiSeq 2500","Paired"
+Run,Experiment ID,Organism,Biomaterial,Genotype,Genotype Variation,Age,Sex,Platform,Layout
+SRR5068328,SRX2388247,Mus Musculus,Microglia dissected from mouse brain tissues,Mecp2_KO,Mecp2_KO,5 week,Female,Illumina HiSeq 2500,Paired
+SRR5068330,SRX2388249,Mus Musculus,Microglia dissected from mouse brain tissues,Mecp2_KO,Mecp2_KO,5 week,Female,Illumina HiSeq 2500,Paired
+SRR5068331,SRX2388250,Mus Musculus,Microglia dissected from mouse brain tissues,WT,WT,5 week,Female,Illumina HiSeq 2500,Paired
+SRR5068332,SRX2388251,Mus Musculus,Microglia dissected from mouse brain tissues,WT,WT,5 week,Female,Illumina HiSeq 2500,Paired
+SRR5068333,SRX2388252,Mus Musculus,Microglia dissected from mouse brain tissues,WT,WT,5 week,Female,Illumina HiSeq 2500,Paired
+SRR5068335,SRX2388254,Mus Musculus,Microglia dissected from mouse brain tissues,Mecp2_KO,Mecp2_KO,24 week,Female,Illumina HiSeq 2500,Paired
+SRR5068338,SRX2388257,Mus Musculus,Microglia dissected from mouse brain tissues,WT,WT,24 week,Female,Illumina HiSeq 2500,Paired
+SRR5068329,SRX2388248,Mus Musculus,Microglia dissected from mouse brain tissues,Mecp2_KO,Mecp2_KO,5 week,Female,Illumina HiSeq 2500,Paired
+SRR5068334,SRX2388253,Mus Musculus,Microglia dissected from mouse brain tissues,Mecp2_KO,Mecp2_KO,24 week,Female,Illumina HiSeq 2500,Paired
+SRR5068336,SRX2388255,Mus Musculus,Microglia dissected from mouse brain tissues,Mecp2_KO,Mecp2_KO,24 week,Female,Illumina HiSeq 2500,Paired
+SRR5068337,SRX2388256,Mus Musculus,Microglia dissected from mouse brain tissues,WT,WT,24 week,Female,Illumina HiSeq 2500,Paired
+SRR5068339,SRX2388258,Mus Musculus,Microglia dissected from mouse brain tissues,WT,WT,24 week,Female,Illumina HiSeq 2500,Paired
