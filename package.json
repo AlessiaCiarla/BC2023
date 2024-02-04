@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/AlessiaCiarla/BC2023/issues"
   },
-  "homepage": "https://github.com/AlessiaCiarla/BC2023#readme",
+  "homepage": "https://github.com/AlessiaCiarla/BC2023#index.html",
   "dependencies": {
     "bootstrap": "^5.3.1",
     "papaparse": "^5.4.1"
