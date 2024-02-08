@@ -189,3 +189,21 @@ section h4 {
     cursor: pointer;
     text-decoration-line: underline;
 }
+
+@media (max-width: 1000px) {
+    #riquadro2 {
+        flex-direction: column;
+    }
+
+    #left {
+        width: 100%;
+    }
+
+    #right {
+        width: 100%;
+    }
+
+    #section08 {
+        margin-bottom: 2rem;
+    }
+}

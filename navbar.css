@@ -112,38 +112,18 @@ li>a {
     align-items: center;
 }
 
-.column {
-    display: inline-block;
-    margin-right: -4px;
-    height: auto;
-}
-
-.column-a {
-    width: 30%;
-}
-
 .column-b {
-    background-color: white;
-    width: 40%;
     text-align: center;
-}
-
-.column-c {
-    padding-top: 20px;
-    width: 30%;
-    text-align: right;
 }
 
 #mouse_homo_img {
     max-height: 200px;
+    width: 100%;
+    height: auto;
 }
 
 #logo {
-    height: 100%;
-    object-fit: contain;
-    padding-top: none;
-    padding-bottom: 20px;
-    padding-right: 40px;
+    height: auto;
 }
 
 #titolo_grande {
